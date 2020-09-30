@@ -1,0 +1,278 @@
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+	text-decoration:none;
+}
+
+header{
+	width:100%;
+	height:600px;
+	background:url(../img/portada.png);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:center;
+	/*height:100vh;*/
+}
+
+header .contenedor{
+	width:90%;
+	max-width:1000px;
+	margin:auto;
+	flex-flow:row wrap;
+}
+
+header .contenedor  nav{
+	display:flex;
+	justify-content: flex-end;
+	padding:23px 0px;
+
+}
+
+header .contenedor  nav  a{
+	color:white;
+	padding:10px  10px;
+    font-size:17px;
+}
+
+header .contenedor  .menu  a:hover{
+text-decoration:underline;
+
+}
+
+header .contenedor .contenedor-textos{
+
+text-align:center;
+padding:130px;
+}
+
+header .contenedor .contenedor-textos  .titulo{
+	color:white;
+	font-size:100px;
+}
+
+header .contenedor .contenedor-textos .linea{
+	width:100%;
+	height:3px;
+	background:#0174DF;
+	margin-bottom:20px;
+}
+
+header .contenedor .contenedor-textos .parrafo{
+	color:white;
+	font-size:20px;
+	margin-bottom:30px;
+
+
+} 
+
+header .contenedor .contenedor-textos .call-c{
+	color:white;
+	padding:10px  15px;
+	border:none;
+	border:1px solid #0080FF;
+	font-size:17px;
+	border-radius:4px;
+
+}
+header .contenedor .contenedor-textos .call-c:hover{
+	background:#2E9AFE;
+
+}
+
+main .simple-diseño{
+
+	text-align:center;
+	background:#F2F2F2;
+
+
+
+}
+main .simple-diseño .contenido{
+	
+	padding:50px;
+	width:80%;
+margin:auto;
+	
+	
+}
+main .simple-diseño .contenido .cont{
+	margin-bottom:20px;
+}
+
+main .simple-diseño .contenido .parrafo{
+	text-align: justify;
+	color:#999;
+}
+main .iconos{
+
+	padding:40px;
+	display:flex;
+	
+}
+
+main .iconos  .icono-indi{
+	text-align: center;
+	/*border:1px solid#ccc;*/
+	padding:20px;
+
+
+}
+
+main .portafolio{
+	background:#f0f3f5;
+	padding:40px;
+       
+}
+main .portafolio .contenedor-t{
+	text-align: center;
+	margin-bottom:30px;
+}
+main .portafolio .imagen{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+
+
+
+
+}
+
+
+main .portafolio .imagen img{
+	width:30%;
+	margin:5px;
+	border-radius:5px;
+	
+
+}
+main .portafolio .imagen img:hover{
+	opacity:0.2;
+}
+
+
+footer {
+	background:url(../img/footer.png);
+	width:100%;
+	height:600px;
+	padding:50px;
+}
+
+footer .contenido-form{
+	width:60%;
+	height:400px;
+	margin:auto;
+	text-align:center;
+}
+
+	footer .contenido-form  h2{
+		color:white;
+		font-size:40px;
+		padding:10px;
+	}
+
+footer .contenido-form p{
+	color:darkgrey;
+	margin-bottom:30px;
+}
+
+footer .contenido-form form{
+	display:flex;
+	flex-direction:column;
+	flex-basis:100%;
+}
+
+footer .contenido-form .nombre,
+footer .contenido-form .correo,
+footer .contenido-form .mensaje{
+	background:none;
+	padding:10px;
+	border:none;
+	border:1px  solid darkgrey;
+	margin:10px;
+	color:white;
+	font-size:18px;
+	border-radius:10px;
+	width:100%;
+}
+
+footer .contenido-form .mensaje{
+	min-width:100%;
+	max-width:100%;
+	min-height:150px;
+	max-height:170px;
+    color: darkgrey;
+}
+	
+
+footer form  .barra  .m{
+	
+	padding:15px  25px;
+	background:none;
+	border:1px solid #0080FF;
+	color:white;
+	font-size:19px;
+	border-radius:5px;
+
+	}	
+
+footer form  .barra  .m:hover{
+ background:#2E9AFE;
+}
+
+
+	
+
+@media screen and (max-width:600px) {
+
+	.contenedor{
+		flex-direction:column;
+	}
+
+	header{
+		padding:0px;
+		margin:0px;
+		background:url(../img/portada.png);
+		background-size:cover;
+		background-position:center;
+		background-repeat: no-repeat;
+		height:100vh;
+		height:500px;
+	}
+	
+	header .contenedor  nav {
+       
+       display:flex;
+       justify-content:center;
+       flex-basis:100%;
+       flex-flow:row wrap;
+}
+
+header .contenedor .contenedor-textos{
+	padding:50px;
+
+}
+
+header .contenedor .contenedor-textos .titulo{
+	font-size:70px;
+}
+
+header .contenedor .contenedor-textos .parrafo{
+	text-align: justify;
+}
+
+footer .contenido-form{
+	width:100%;
+}
+footer .contenido-form form{
+	flex-basis:100%;
+	display:flex;
+	flex-flow:row wrap;
+}
+
+footer form  .barra {
+	flex-basis:100%;
+
+}
+
+}
